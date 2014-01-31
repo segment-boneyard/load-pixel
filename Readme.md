@@ -14,9 +14,8 @@ $ component install segmentio/load-pixel
 ```js
 var pixel = require('load-pixel')('//facebook.com/offsiet_event.php');
 
-
 pixel({
-  currency: 'USD'  ,
+  currency: 'USD',
   value: 1,
   id: 18403
 });
