@@ -19,7 +19,7 @@ module.exports = function(path){
     if ('function' == typeof obj) fn = obj, obj = {};
     obj = obj || {};
     fn = fn || function(){};
-    var url = path;
+    var url = sub(path, obj);
     var img = new Image;
     img.onerror = error(fn, 'failed to load pixel', img);
     img.onload = function(){ fn(); };
