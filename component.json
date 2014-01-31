@@ -1,0 +1,18 @@
+{
+  "name": "load-pixel",
+  "repo": "segmentio/load-pixel",
+  "description": "Load conversion pixel easily",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": ["index.js"],
+  "version": "0.0.1",
+  "dependencies": {
+    "component/querystring": "*"
+  },
+  "development": {
+    "visionmedia/mocha": "*",
+    "component/assert": "*",
+    "yields/gravy": "*"
+  }
+}

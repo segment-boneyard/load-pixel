@@ -1,0 +1,14 @@
+{
+  "name": "load-pixel",
+  "repo": "segmentio/load-pixel",
+  "description": "Load conversion pixel easily",
+  "version": "0.0.1",
+  "devDependencies": {
+    "gravy": "~0.1.0",
+    "should": "~3.1.2",
+    "mocha": "~1.17.1",
+    "component": "~0.19.5",
+    "gravy": "~0.1.0",
+    "serve": "~1.3.0"
+  }
+}
