@@ -17,8 +17,9 @@ var sub = require('substitute');
 module.exports = function(path){
   return function(query, obj, fn){
     if ('function' == typeof obj) fn = obj, obj = {};
+    obj = obj || {};
     fn = fn || function(){};
-    var url = sub(path, obj);
+    var url = path;
     var img = new Image;
     img.onerror = error(fn, 'failed to load pixel', img);
     img.onload = function(){ fn(); };
