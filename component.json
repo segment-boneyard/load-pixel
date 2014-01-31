@@ -8,7 +8,8 @@
   "scripts": ["index.js"],
   "version": "0.0.1",
   "dependencies": {
-    "component/querystring": "*"
+    "component/querystring": "*",
+    "segmentio/substitute": "*"
   },
   "development": {
     "visionmedia/mocha": "*",

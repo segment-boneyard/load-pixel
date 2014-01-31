@@ -4,6 +4,7 @@
  */
 
 var stringify = require('querystring').stringify;
+var sub = require('substitute');
 
 /**
  * Factory function to create a pixel loader.
@@ -14,12 +15,16 @@ var stringify = require('querystring').stringify;
  */
 
 module.exports = function(path){
-  return function(query, fn){
+  return function(query, obj, fn){
+    if ('function' == typeof obj) fn = obj, obj = {};
     fn = fn || function(){};
+    var url = sub(path, obj);
     var img = new Image;
     img.onerror = error(fn, 'failed to load pixel', img);
     img.onload = function(){ fn(); };
-    img.src = path + '?' + stringify(query);
+    query = stringify(query);
+    if (query) query = '?' + query;
+    img.src = url + query;
     img.width = 1;
     img.height = 1;
     return img;

@@ -23,4 +23,10 @@ describe('load-pixel', function(){
       done();
     });
   })
+
+  it('should substitute if needed', function(){
+    var img = pixel('//google.com/:baz')({}, { baz: 'foo' });
+    var protocol = window.location.protocol;
+    assert(protocol + '//google.com/foo' == img.src);
+  })
 });
