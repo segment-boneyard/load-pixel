@@ -2,10 +2,9 @@
   "name": "load-pixel",
   "repo": "segmentio/load-pixel",
   "description": "Load conversion pixel easily",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": ["index.js"],
-  "version": "0.0.1",
   "dependencies": {
     "component/querystring": "*",
     "segmentio/substitute": "*"
