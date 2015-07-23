@@ -6,8 +6,8 @@
   "main": "index.js",
   "scripts": ["index.js"],
   "dependencies": {
-    "component/querystring": "*",
-    "segmentio/substitute": "*"
+    "segmentio/substitute": "*",
+    "hapijs/qs": "4.0.0"
   },
   "development": {
     "visionmedia/mocha": "*",
