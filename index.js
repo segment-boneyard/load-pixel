@@ -3,7 +3,7 @@
  * Module dependencies.
  */
 
-var stringify = require('querystring').stringify;
+var stringify = require('qs').stringify;
 var sub = require('substitute');
 
 /**
